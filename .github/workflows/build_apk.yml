@@ -1,0 +1,70 @@
+﻿name: Build APK
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'p4a_config.py'
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          openjdk-11-jdk \
+          build-essential \
+          ccache \
+          libssl-dev \
+          libffi-dev \
+          python3-dev \
+          libncurses5 \
+          libncursesw5 \
+          libtinfo5 \
+          libxml2-dev \
+          libxml2-utils \
+          libxslt1-dev \
+          zlib1g-dev \
+          libltdl-dev \
+          libusb-1.0-0-dev \
+          python3-pip
+    - name: Set up Java 11
+      run: |
+        echo "JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> 
+        echo "PATH=/bin:" >> 
+    - name: Install Python dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip3 install -r requirements.txt
+    - name: Install python-for-android
+      run: |
+        pip3 install python-for-android
+    - name: Build APK
+      run: |
+        p4a apk --private src/main.py --requirements python3,kivy --name "" --package com.example.app --version 1.0.0 --dist-dir ./output/
+      env:
+        ANDROID_HOME: /opt/android-sdk
+        JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: APK
+        path: output/*.apk
+    - name: Upload build logs
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-logs
+        path: |
+          *.log
+          .p4a/*

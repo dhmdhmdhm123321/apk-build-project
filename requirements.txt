@@ -1,0 +1,26 @@
+# 工资计算系统依赖库列表
+# 用于开发环境和云开发平台配置
+
+# 核心依赖
+kivy==2.3.0
+pandas==2.0.3
+matplotlib==3.7.2
+openpyxl==3.1.2
+reportlab==3.6.12
+pyjnius==1.6.1
+requests==2.31.0
+ntplib==0.4.0
+
+# Tkinter相关（Python标准库，但在某些环境中可能需要单独安装）
+# tkinter
+
+# 开发工具
+buildozer==1.5.0
+wheel==0.41.2
+setuptools==68.2.2
+python-for-android==2024.1.21
+
+# 可选依赖（增强功能）
+Pillow==10.0.1
+numpy==1.24.4
+scipy==1.10.1

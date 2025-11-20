@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  build-env:
+    build: .
+    volumes:
+      - .:/app
+      - buildozer-cache:/root/.buildozer
+    command: buildozer -v android debug
+    environment:
+      - PYTHONPATH=/app
+
+volumes:
+  buildozer-cache:
+    driver: local

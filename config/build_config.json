@@ -1,0 +1,29 @@
+{
+  "app_name": "SalaryCalculator",
+  "package_name": "org.test.salarycalculator",
+  "package_domain": "org.test",
+  "version": "1.0",
+  "requirements": [
+    "kivy==2.3.0",
+    "certifi==2023.7.22",
+    "pyjnius==1.6.1",
+    "openpyxl==3.1.2",
+    "pandas==2.0.3",
+    "matplotlib==3.7.2",
+    "reportlab==3.6.12",
+    "requests==2.31.0",
+    "numpy==1.24.4"
+  ],
+  "orientation": "portrait",
+  "screen": "fullscreen",
+  "android_api": 28,
+  "ndk_version": "21.4.7075529",
+  "sdk_version": 28,
+  "archs": ["armeabi-v7a"],
+  "source_dir": ".",
+  "output_dir": "./output",
+  "android_sdk_path": "./android-sdk",
+  "android_ndk_path": "./android-ndk",
+  "java_home": "/usr/lib/jvm/java-11-openjdk-amd64",
+  "main_py": "main.py"
+}

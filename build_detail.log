@@ -1,0 +1,2816 @@
+[WARNING]: prerequisites.py is experimental and does not support all prerequisites yet.
+[WARNING]: Please report any issues to the python-for-android issue tracker.
+[INFO]:    Recipe kivy: version "2.3.0" requested
+[INFO]:    Recipe certifi: version "2023.7.22" requested
+[INFO]:    Recipe pyjnius: version "1.6.1" requested
+[INFO]:    Recipe openpyxl: version "3.1.2" requested
+[INFO]:    Recipe pandas: version "2.0.3" requested
+[INFO]:    Recipe matplotlib: version "3.7.2" requested
+[INFO]:    Recipe reportlab: version "3.6.12" requested
+[INFO]:    Recipe requests: version "2.31.0" requested
+[INFO]:    Recipe numpy: version "1.24.4" requested
+[INFO]:    Will compile for the following archs: armeabi-v7a
+[INFO]:    Android API target was not set manually, using the default of 33
+[INFO]:    Available Android APIs are (33)
+[INFO]:    Requested API target 33 is available, continuing.
+[INFO]:    Getting NDK dir from from user argument
+[INFO]:    Could not determine NDK version, no source.properties in the NDK dir.
+[WARNING]: Unable to read the NDK version from the given directory ./android-ndk.
+[WARNING]: Make sure your NDK version is greater than 25. If you get build errors, download the recommended NDK 25b from https://developer.android.com/ndk/downloads/.
+[INFO]:    Getting NDK API version (i.e. minimum supported API) from user argument
+[INFO]:    No existing dists meet the given requirements!
+[INFO]:    No dist exists that meets your requirements, so one will be built.
+[INFO]:    Found a single valid recipe set: ['certifi', 'freetype', 'hostpython3', 'jpeg', 'libbz2', 'libffi', 'liblzma', 'openpyxl', 'openssl', 'png', 'requests', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'reportlab', 'setuptools', 'cppy', 'cython', 'pillow', 'six', 'kiwisolver', 'numpy', 'pyjnius', 'kivy', 'matplotlib', 'pandas']
+[INFO]:    Trying to find a bootstrap that matches the given recipes.
+[INFO]:    Found 1 acceptable bootstraps: ['sdl2']
+[INFO]:    Using sdl2 bootstrap since it is in dependencies
+[INFO]:    Found a single valid recipe set: ['certifi', 'freetype', 'hostpython3', 'jpeg', 'libbz2', 'libffi', 'liblzma', 'openpyxl', 'openssl', 'png', 'requests', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'reportlab', 'setuptools', 'cppy', 'cython', 'pillow', 'six', 'kiwisolver', 'numpy', 'pyjnius', 'android', 'kivy', 'matplotlib', 'pandas']
+[INFO]:    The selected bootstrap is sdl2
+[INFO]:    # Creating dist with sdl2 bootstrap
+[INFO]:    Dist will have name unnamed_dist_2 and requirements (kivy, certifi, pyjnius, openpyxl, pandas, matplotlib, reportlab, requests, numpy)
+[INFO]:    Dist contains the following requirements as recipes: ['freetype', 'hostpython3', 'jpeg', 'libbz2', 'libffi', 'liblzma', 'openssl', 'png', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'reportlab', 'setuptools', 'cppy', 'cython', 'pillow', 'six', 'kiwisolver', 'numpy', 'pyjnius', 'android', 'kivy', 'matplotlib', 'pandas']
+[INFO]:    Dist will also contain modules (chardet, python-dateutil, idna, requests, certifi, cycler, pyparsing, pytz, packaging, urllib3, fonttools, openpyxl) installed from pip
+[INFO]:    Dist will be build in mode debug
+[INFO]:    -> directory context /root/.local/share/python-for-android/build/bootstrap_builds/sdl2
+[INFO]:    <- directory context /root/apk
+[INFO]:    Recipe build order is ['freetype', 'hostpython3', 'jpeg', 'libbz2', 'libffi', 'liblzma', 'openssl', 'png', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'reportlab', 'setuptools', 'cppy', 'cython', 'pillow', 'six', 'kiwisolver', 'numpy', 'pyjnius', 'android', 'kivy', 'matplotlib', 'pandas']
+[INFO]:    The requirements (certifi, chardet, cycler, fonttools, idna, openpyxl, packaging, pyparsing, python-dateutil, pytz, requests, urllib3) were not found as recipes, they will be installed with pip.
+[INFO]:    # Downloading recipes 
+[INFO]:    Downloading freetype
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/freetype
+[INFO]:    -> running basename https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz
+
+           working: freetype-2.10.1.tar.gz                                                                       
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-freetype-2.10.1.tar.gz
+[INFO]:    Downloading freetype from https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz
+- Download 0.00%
+- Download 0.24%
+- Download 0.47%
+- Download 0.71%
+- Download 0.94%
+- Download 1.18%
+- Download 1.41%
+- Download 1.65%
+- Download 1.88%
+- Download 2.12%
+- Download 2.36%
+- Download 2.59%
+- Download 2.83%
+- Download 3.06%
+- Download 3.30%
+- Download 3.53%
+- Download 3.77%
+- Download 4.00%
+- Download 4.24%
+- Download 4.48%
+- Download 4.71%
+- Download 4.95%
+- Download 5.18%
+- Download 5.42%
+- Download 5.65%
+- Download 5.89%
+- Download 6.12%
+- Download 6.36%
+- Download 6.59%
+- Download 6.83%
+- Download 7.07%
+- Download 7.30%
+- Download 7.54%
+- Download 7.77%
+- Download 8.01%
+- Download 8.24%
+- Download 8.48%
+- Download 8.71%
+- Download 8.95%
+- Download 9.19%
+- Download 9.42%
+- Download 9.66%
+- Download 9.89%
+- Download 10.13%
+- Download 10.36%
+- Download 10.60%
+- Download 10.83%
+- Download 11.07%
+- Download 11.31%
+- Download 11.54%
+- Download 11.78%
+- Download 12.01%
+- Download 12.25%
+- Download 12.48%
+- Download 12.72%
+- Download 12.95%
+- Download 13.19%
+- Download 13.43%
+- Download 13.66%
+- Download 13.90%
+- Download 14.13%
+- Download 14.37%
+- Download 14.60%
+- Download 14.84%
+- Download 15.07%
+- Download 15.31%
+- Download 15.54%
+- Download 15.78%
+- Download 16.02%
+- Download 16.25%
+- Download 16.49%
+- Download 16.72%
+- Download 16.96%
+- Download 17.19%
+- Download 17.43%
+- Download 17.66%
+- Download 17.90%
+- Download 18.14%
+- Download 18.37%
+- Download 18.61%
+- Download 18.84%
+- Download 19.08%
+- Download 19.31%
+- Download 19.55%
+- Download 19.78%
+- Download 20.02%
+- Download 20.26%
+- Download 20.49%
+- Download 20.73%
+- Download 20.96%
+- Download 21.20%
+- Download 21.43%
+- Download 21.67%
+- Download 21.90%
+- Download 22.14%
+- Download 22.38%
+- Download 22.61%
+- Download 22.85%
+- Download 23.08%
+- Download 23.32%
+- Download 23.55%
+- Download 23.79%
+- Download 24.02%
+- Download 24.26%
+- Download 24.49%
+- Download 24.73%
+- Download 24.97%
+- Download 25.20%
+- Download 25.44%
+- Download 25.67%
+- Download 25.91%
+- Download 26.14%
+- Download 26.38%
+- Download 26.61%
+- Download 26.85%
+- Download 27.09%
+- Download 27.32%
+- Download 27.56%
+- Download 27.79%
+- Download 28.03%
+- Download 28.26%
+- Download 28.50%
+- Download 28.73%
+- Download 28.97%
+- Download 29.21%
+- Download 29.44%
+- Download 29.68%
+- Download 29.91%
+- Download 30.15%
+- Download 30.38%
+- Download 30.62%
+- Download 30.85%
+- Download 31.09%
+- Download 31.33%
+- Download 31.56%
+- Download 31.80%
+- Download 32.03%
+- Download 32.27%
+- Download 32.50%
+- Download 32.74%
+- Download 32.97%
+- Download 33.21%
+- Download 33.44%
+- Download 33.68%
+- Download 33.92%
+- Download 34.15%
+- Download 34.39%
+- Download 34.62%
+- Download 34.86%
+- Download 35.09%
+- Download 35.33%
+- Download 35.56%
+- Download 35.80%
+- Download 36.04%
+- Download 36.27%
+- Download 36.51%
+- Download 36.74%
+- Download 36.98%
+- Download 37.21%
+- Download 37.45%
+- Download 37.68%
+- Download 37.92%
+- Download 38.16%
+- Download 38.39%
+- Download 38.63%
+- Download 38.86%
+- Download 39.10%
+- Download 39.33%
+- Download 39.57%
+- Download 39.80%
+- Download 40.04%
+- Download 40.28%
+- Download 40.51%
+- Download 40.75%
+- Download 40.98%
+- Download 41.22%
+- Download 41.45%
+- Download 41.69%
+- Download 41.92%
+- Download 42.16%
+- Download 42.39%
+- Download 42.63%
+- Download 42.87%
+- Download 43.10%
+- Download 43.34%
+- Download 43.57%
+- Download 43.81%
+- Download 44.04%
+- Download 44.28%
+- Download 44.51%
+- Download 44.75%
+- Download 44.99%
+- Download 45.22%
+- Download 45.46%
+- Download 45.69%
+- Download 45.93%
+- Download 46.16%
+- Download 46.40%
+- Download 46.63%
+- Download 46.87%
+- Download 47.11%
+- Download 47.34%
+- Download 47.58%
+- Download 47.81%
+- Download 48.05%
+- Download 48.28%
+- Download 48.52%
+- Download 48.75%
+- Download 48.99%
+- Download 49.23%
+- Download 49.46%
+- Download 49.70%
+- Download 49.93%
+- Download 50.17%
+- Download 50.40%
+- Download 50.64%
+- Download 50.87%
+- Download 51.11%
+- Download 51.34%
+- Download 51.58%
+- Download 51.82%
+- Download 52.05%
+- Download 52.29%
+- Download 52.52%
+- Download 52.76%
+- Download 52.99%
+- Download 53.23%
+- Download 53.46%
+- Download 53.70%
+- Download 53.94%
+- Download 54.17%
+- Download 54.41%
+- Download 54.64%
+- Download 54.88%
+- Download 55.11%
+- Download 55.35%
+- Download 55.58%
+- Download 55.82%
+- Download 56.06%
+- Download 56.29%
+- Download 56.53%
+- Download 56.76%
+- Download 57.00%
+- Download 57.23%
+- Download 57.47%
+- Download 57.70%
+- Download 57.94%
+- Download 58.18%
+- Download 58.41%
+- Download 58.65%
+- Download 58.88%
+- Download 59.12%
+- Download 59.35%
+- Download 59.59%
+- Download 59.82%
+- Download 60.06%
+- Download 60.29%
+- Download 60.53%
+- Download 60.77%
+- Download 61.00%
+- Download 61.24%
+- Download 61.47%
+- Download 61.71%
+- Download 61.94%
+- Download 62.18%
+- Download 62.41%
+- Download 62.65%
+- Download 62.89%
+- Download 63.12%
+- Download 63.36%
+- Download 63.59%
+- Download 63.83%
+- Download 64.06%
+- Download 64.30%
+- Download 64.53%
+- Download 64.77%
+- Download 65.01%
+- Download 65.24%
+- Download 65.48%
+- Download 65.71%
+- Download 65.95%
+- Download 66.18%
+- Download 66.42%
+- Download 66.65%
+- Download 66.89%
+- Download 67.13%
+- Download 67.36%
+- Download 67.60%
+- Download 67.83%
+- Download 68.07%
+- Download 68.30%
+- Download 68.54%
+- Download 68.77%
+- Download 69.01%
+- Download 69.24%
+- Download 69.48%
+- Download 69.72%
+- Download 69.95%
+- Download 70.19%
+- Download 70.42%
+- Download 70.66%
+- Download 70.89%
+- Download 71.13%
+- Download 71.36%
+- Download 71.60%
+- Download 71.84%
+- Download 72.07%
+- Download 72.31%
+- Download 72.54%
+- Download 72.78%
+- Download 73.01%
+- Download 73.25%
+- Download 73.48%
+- Download 73.72%
+- Download 73.96%
+- Download 74.19%
+- Download 74.43%
+- Download 74.66%
+- Download 74.90%
+- Download 75.13%
+- Download 75.37%
+- Download 75.60%
+- Download 75.84%
+- Download 76.08%
+- Download 76.31%
+- Download 76.55%
+- Download 76.78%
+- Download 77.02%
+- Download 77.25%
+- Download 77.49%
+- Download 77.72%
+- Download 77.96%
+- Download 78.19%
+- Download 78.43%
+- Download 78.67%
+- Download 78.90%
+- Download 79.14%
+- Download 79.37%
+- Download 79.61%
+- Download 79.84%
+- Download 80.08%
+- Download 80.31%
+- Download 80.55%
+- Download 80.79%
+- Download 81.02%
+- Download 81.26%
+- Download 81.49%
+- Download 81.73%
+- Download 81.96%
+- Download 82.20%
+- Download 82.43%
+- Download 82.67%
+- Download 82.91%
+- Download 83.14%
+- Download 83.38%
+- Download 83.61%
+- Download 83.85%
+- Download 84.08%
+- Download 84.32%
+- Download 84.55%
+- Download 84.79%
+- Download 85.03%
+- Download 85.26%
+- Download 85.50%
+- Download 85.73%
+- Download 85.97%
+- Download 86.20%
+- Download 86.44%
+- Download 86.67%
+- Download 86.91%
+- Download 87.14%
+- Download 87.38%
+- Download 87.62%
+- Download 87.85%
+- Download 88.09%
+- Download 88.32%
+- Download 88.56%
+- Download 88.79%
+- Download 89.03%
+- Download 89.26%
+- Download 89.50%
+- Download 89.74%
+- Download 89.97%
+- Download 90.21%
+- Download 90.44%
+- Download 90.68%
+- Download 90.91%
+- Download 91.15%
+- Download 91.38%
+- Download 91.62%
+- Download 91.86%
+- Download 92.09%
+- Download 92.33%
+- Download 92.56%
+- Download 92.80%
+- Download 93.03%
+- Download 93.27%
+- Download 93.50%
+- Download 93.74%
+- Download 93.98%
+- Download 94.21%
+- Download 94.45%
+- Download 94.68%
+- Download 94.92%
+- Download 95.15%
+- Download 95.39%
+- Download 95.62%
+- Download 95.86%
+- Download 96.10%
+- Download 96.33%
+- Download 96.57%
+- Download 96.80%
+- Download 97.04%
+- Download 97.27%
+- Download 97.51%
+- Download 97.74%
+- Download 97.98%
+- Download 98.21%
+- Download 98.45%
+- Download 98.69%
+- Download 98.92%
+- Download 99.16%
+- Download 99.39%
+- Download 99.63%
+- Download 99.86%
+- Download 100.10%
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading hostpython3
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/hostpython3
+[INFO]:    -> running basename https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz
+
+           working: Python-3.11.5.tgz                                                                            
+                                                                                                                 
+[INFO]:    hostpython3 download already cached, skipping
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading jpeg
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/jpeg
+[INFO]:    -> running basename https://github.com/libjpeg-turbo/libjpeg-turbo/archive/2.0.1.tar.gz
+
+           working: 2.0.1.tar.gz                                                                                 
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-2.0.1.tar.gz
+[INFO]:    Downloading jpeg from https://github.com/libjpeg-turbo/libjpeg-turbo/archive/2.0.1.tar.gz
+- Download 0 bytes
+- Download 8192 bytes
+- Download 16384 bytes
+- Download 24576 bytes
+- Download 32768 bytes
+- Download 40960 bytes
+- Download 49152 bytes
+- Download 57344 bytes
+- Download 65536 bytes
+- Download 73728 bytes
+- Download 81920 bytes
+- Download 90112 bytes
+- Download 98304 bytes
+- Download 106496 bytes
+- Download 114688 bytes
+- Download 122880 bytes
+- Download 131072 bytes
+- Download 139264 bytes
+- Download 147456 bytes
+- Download 155648 bytes
+- Download 163840 bytes
+- Download 172032 bytes
+- Download 180224 bytes
+- Download 188416 bytes
+- Download 196608 bytes
+- Download 204800 bytes
+- Download 212992 bytes
+- Download 221184 bytes
+- Download 229376 bytes
+- Download 237568 bytes
+- Download 245760 bytes
+- Download 253952 bytes
+- Download 262144 bytes
+- Download 270336 bytes
+- Download 278528 bytes
+- Download 286720 bytes
+- Download 294912 bytes
+- Download 303104 bytes
+- Download 311296 bytes
+- Download 319488 bytes
+- Download 327680 bytes
+- Download 335872 bytes
+- Download 344064 bytes
+- Download 352256 bytes
+- Download 360448 bytes
+- Download 368640 bytes
+- Download 376832 bytes
+- Download 385024 bytes
+- Download 393216 bytes
+- Download 401408 bytes
+- Download 409600 bytes
+- Download 417792 bytes
+- Download 425984 bytes
+- Download 434176 bytes
+- Download 442368 bytes
+- Download 450560 bytes
+- Download 458752 bytes
+- Download 466944 bytes
+- Download 475136 bytes
+- Download 483328 bytes
+- Download 491520 bytes
+- Download 499712 bytes
+- Download 507904 bytes
+- Download 516096 bytes
+- Download 524288 bytes
+- Download 532480 bytes
+- Download 540672 bytes
+- Download 548864 bytes
+- Download 557056 bytes
+- Download 565248 bytes
+- Download 573440 bytes
+- Download 581632 bytes
+- Download 589824 bytes
+- Download 598016 bytes
+- Download 606208 bytes
+- Download 614400 bytes
+- Download 622592 bytes
+- Download 630784 bytes
+- Download 638976 bytes
+- Download 647168 bytes
+- Download 655360 bytes
+- Download 663552 bytes
+- Download 671744 bytes
+- Download 679936 bytes
+- Download 688128 bytes
+- Download 696320 bytes
+- Download 704512 bytes
+- Download 712704 bytes
+- Download 720896 bytes
+- Download 729088 bytes
+- Download 737280 bytes
+- Download 745472 bytes
+- Download 753664 bytes
+- Download 761856 bytes
+- Download 770048 bytes
+- Download 778240 bytes
+- Download 786432 bytes
+- Download 794624 bytes
+- Download 802816 bytes
+- Download 811008 bytes
+- Download 819200 bytes
+- Download 827392 bytes
+- Download 835584 bytes
+- Download 843776 bytes
+- Download 851968 bytes
+- Download 860160 bytes
+- Download 868352 bytes
+- Download 876544 bytes
+- Download 884736 bytes
+- Download 892928 bytes
+- Download 901120 bytes
+- Download 909312 bytes
+- Download 917504 bytes
+- Download 925696 bytes
+- Download 933888 bytes
+- Download 942080 bytes
+- Download 950272 bytes
+- Download 958464 bytes
+- Download 966656 bytes
+- Download 974848 bytes
+- Download 983040 bytes
+- Download 991232 bytes
+- Download 999424 bytes
+- Download 1007616 bytes
+- Download 1015808 bytes
+- Download 1024000 bytes
+- Download 1032192 bytes
+- Download 1040384 bytes
+- Download 1048576 bytes
+- Download 1056768 bytes
+- Download 1064960 bytes
+- Download 1073152 bytes
+- Download 1081344 bytes
+- Download 1089536 bytes
+- Download 1097728 bytes
+- Download 1105920 bytes
+- Download 1114112 bytes
+- Download 1122304 bytes
+- Download 1130496 bytes
+- Download 1138688 bytes
+- Download 1146880 bytes
+- Download 1155072 bytes
+- Download 1163264 bytes
+- Download 1171456 bytes
+- Download 1179648 bytes
+- Download 1187840 bytes
+- Download 1196032 bytes
+- Download 1204224 bytes
+- Download 1212416 bytes
+- Download 1220608 bytes
+- Download 1228800 bytes
+- Download 1236992 bytes
+- Download 1245184 bytes
+- Download 1253376 bytes
+- Download 1261568 bytes
+- Download 1269760 bytes
+- Download 1277952 bytes
+- Download 1286144 bytes
+- Download 1294336 bytes
+- Download 1302528 bytes
+- Download 1310720 bytes
+- Download 1318912 bytes
+- Download 1327104 bytes
+- Download 1335296 bytes
+- Download 1343488 bytes
+- Download 1351680 bytes
+- Download 1359872 bytes
+- Download 1368064 bytes
+- Download 1376256 bytes
+- Download 1384448 bytes
+- Download 1392640 bytes
+- Download 1400832 bytes
+- Download 1409024 bytes
+- Download 1417216 bytes
+- Download 1425408 bytes
+- Download 1433600 bytes
+- Download 1441792 bytes
+- Download 1449984 bytes
+- Download 1458176 bytes
+- Download 1466368 bytes
+- Download 1474560 bytes
+- Download 1482752 bytes
+- Download 1490944 bytes
+- Download 1499136 bytes
+- Download 1507328 bytes
+- Download 1515520 bytes
+- Download 1523712 bytes
+- Download 1531904 bytes
+- Download 1540096 bytes
+- Download 1548288 bytes
+- Download 1556480 bytes
+- Download 1564672 bytes
+- Download 1572864 bytes
+- Download 1581056 bytes
+- Download 1589248 bytes
+- Download 1597440 bytes
+- Download 1605632 bytes
+- Download 1613824 bytes
+- Download 1622016 bytes
+- Download 1630208 bytes
+- Download 1638400 bytes
+- Download 1646592 bytes
+- Download 1654784 bytes
+- Download 1662976 bytes
+- Download 1671168 bytes
+- Download 1679360 bytes
+- Download 1687552 bytes
+- Download 1695744 bytes
+- Download 1703936 bytes
+- Download 1712128 bytes
+- Download 1720320 bytes
+- Download 1728512 bytes
+- Download 1736704 bytes
+- Download 1744896 bytes
+- Download 1753088 bytes
+- Download 1761280 bytes
+- Download 1769472 bytes
+- Download 1777664 bytes
+- Download 1785856 bytes
+- Download 1794048 bytes
+- Download 1802240 bytes
+- Download 1810432 bytes
+- Download 1818624 bytes
+- Download 1826816 bytes
+- Download 1835008 bytes
+- Download 1843200 bytes
+- Download 1851392 bytes
+- Download 1859584 bytes
+- Download 1867776 bytes
+- Download 1875968 bytes
+- Download 1884160 bytes
+- Download 1892352 bytes
+- Download 1900544 bytes
+- Download 1908736 bytes
+- Download 1916928 bytes
+- Download 1925120 bytes
+- Download 1933312 bytes
+- Download 1941504 bytes
+- Download 1949696 bytes
+- Download 1957888 bytes
+- Download 1966080 bytes
+- Download 1974272 bytes
+- Download 1982464 bytes
+- Download 1990656 bytes
+- Download 1998848 bytes
+- Download 2007040 bytes
+- Download 2015232 bytes
+- Download 2023424 bytes
+- Download 2031616 bytes
+- Download 2039808 bytes
+- Download 2048000 bytes
+- Download 2056192 bytes
+- Download 2064384 bytes
+- Download 2072576 bytes
+- Download 2080768 bytes
+- Download 2088960 bytes
+- Download 2097152 bytes
+- Download 2105344 bytes
+- Download 2113536 bytes
+- Download 2121728 bytes
+- Download 2129920 bytes
+- Download 2138112 bytes
+- Download 2146304 bytes
+- Download 2154496 bytes
+- Download 2162688 bytes
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading libbz2
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/libbz2
+[INFO]:    -> running basename https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+
+           working: bzip2-1.0.8.tar.gz                                                                           
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-bzip2-1.0.8.tar.gz
+[INFO]:    Downloading libbz2 from https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+- Download 0.00%
+- Download 1.01%
+- Download 2.02%
+- Download 3.03%
+- Download 4.05%
+- Download 5.06%
+- Download 6.07%
+- Download 7.08%
+- Download 8.09%
+- Download 9.10%
+- Download 10.11%
+- Download 11.12%
+- Download 12.14%
+- Download 13.15%
+- Download 14.16%
+- Download 15.17%
+- Download 16.18%
+- Download 17.19%
+- Download 18.20%
+- Download 19.22%
+- Download 20.23%
+- Download 21.24%
+- Download 22.25%
+- Download 23.26%
+- Download 24.27%
+- Download 25.28%
+- Download 26.29%
+- Download 27.31%
+- Download 28.32%
+- Download 29.33%
+- Download 30.34%
+- Download 31.35%
+- Download 32.36%
+- Download 33.37%
+- Download 34.38%
+- Download 35.40%
+- Download 36.41%
+- Download 37.42%
+- Download 38.43%
+- Download 39.44%
+- Download 40.45%
+- Download 41.46%
+- Download 42.48%
+- Download 43.49%
+- Download 44.50%
+- Download 45.51%
+- Download 46.52%
+- Download 47.53%
+- Download 48.54%
+- Download 49.55%
+- Download 50.57%
+- Download 51.58%
+- Download 52.59%
+- Download 53.60%
+- Download 54.61%
+- Download 55.62%
+- Download 56.63%
+- Download 57.65%
+- Download 58.66%
+- Download 59.67%
+- Download 60.68%
+- Download 61.69%
+- Download 62.70%
+- Download 63.71%
+- Download 64.72%
+- Download 65.74%
+- Download 66.75%
+- Download 67.76%
+- Download 68.77%
+- Download 69.78%
+- Download 70.79%
+- Download 71.80%
+- Download 72.82%
+- Download 73.83%
+- Download 74.84%
+- Download 75.85%
+- Download 76.86%
+- Download 77.87%
+- Download 78.88%
+- Download 79.89%
+- Download 80.91%
+- Download 81.92%
+- Download 82.93%
+- Download 83.94%
+- Download 84.95%
+- Download 85.96%
+- Download 86.97%
+- Download 87.98%
+- Download 89.00%
+- Download 90.01%
+- Download 91.02%
+- Download 92.03%
+- Download 93.04%
+- Download 94.05%
+- Download 95.06%
+- Download 96.08%
+- Download 97.09%
+- Download 98.10%
+- Download 99.11%
+- Download 100.12%
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading libffi
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/libffi
+[INFO]:    -> running basename https://github.com/libffi/libffi/archive/v3.4.2.tar.gz
+
+           working: v3.4.2.tar.gz                                                                                
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-v3.4.2.tar.gz
+[INFO]:    Downloading libffi from https://github.com/libffi/libffi/archive/v3.4.2.tar.gz
+- Download 0 bytes
+- Download 8192 bytes
+- Download 16384 bytes
+- Download 24576 bytes
+- Download 32768 bytes
+- Download 40960 bytes
+- Download 49152 bytes
+- Download 57344 bytes
+- Download 65536 bytes
+- Download 73728 bytes
+- Download 81920 bytes
+- Download 90112 bytes
+- Download 98304 bytes
+- Download 106496 bytes
+- Download 114688 bytes
+- Download 122880 bytes
+- Download 131072 bytes
+- Download 139264 bytes
+- Download 147456 bytes
+- Download 155648 bytes
+- Download 163840 bytes
+- Download 172032 bytes
+- Download 180224 bytes
+- Download 188416 bytes
+- Download 196608 bytes
+- Download 204800 bytes
+- Download 212992 bytes
+- Download 221184 bytes
+- Download 229376 bytes
+- Download 237568 bytes
+- Download 245760 bytes
+- Download 253952 bytes
+- Download 262144 bytes
+- Download 270336 bytes
+- Download 278528 bytes
+- Download 286720 bytes
+- Download 294912 bytes
+- Download 303104 bytes
+- Download 311296 bytes
+- Download 319488 bytes
+- Download 327680 bytes
+- Download 335872 bytes
+- Download 344064 bytes
+- Download 352256 bytes
+- Download 360448 bytes
+- Download 368640 bytes
+- Download 376832 bytes
+- Download 385024 bytes
+- Download 393216 bytes
+- Download 401408 bytes
+- Download 409600 bytes
+- Download 417792 bytes
+- Download 425984 bytes
+- Download 434176 bytes
+- Download 442368 bytes
+- Download 450560 bytes
+- Download 458752 bytes
+- Download 466944 bytes
+- Download 475136 bytes
+- Download 483328 bytes
+- Download 491520 bytes
+- Download 499712 bytes
+- Download 507904 bytes
+- Download 516096 bytes
+- Download 524288 bytes
+- Download 532480 bytes
+- Download 540672 bytes
+- Download 548864 bytes
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading liblzma
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/liblzma
+[INFO]:    -> running basename https://tukaani.org/xz/xz-5.2.4.tar.gz
+
+           working: xz-5.2.4.tar.gz                                                                              
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-xz-5.2.4.tar.gz
+[INFO]:    Downloading liblzma from https://tukaani.org/xz/xz-5.2.4.tar.gz
+- Download 0.00%
+- Download 0.52%
+- Download 1.04%
+- Download 1.56%
+- Download 2.08%
+- Download 2.61%
+- Download 3.13%
+- Download 3.65%
+- Download 4.17%
+- Download 4.69%
+- Download 5.21%
+- Download 5.73%
+- Download 6.25%
+- Download 6.77%
+- Download 7.29%
+- Download 7.82%
+- Download 8.34%
+- Download 8.86%
+- Download 9.38%
+- Download 9.90%
+- Download 10.42%
+- Download 10.94%
+- Download 11.46%
+- Download 11.98%
+- Download 12.50%
+- Download 13.03%
+- Download 13.55%
+- Download 14.07%
+- Download 14.59%
+- Download 15.11%
+- Download 15.63%
+- Download 16.15%
+- Download 16.67%
+- Download 17.19%
+- Download 17.71%
+- Download 18.24%
+- Download 18.76%
+- Download 19.28%
+- Download 19.80%
+- Download 20.32%
+- Download 20.84%
+- Download 21.36%
+- Download 21.88%
+- Download 22.40%
+- Download 22.92%
+- Download 23.45%
+- Download 23.97%
+- Download 24.49%
+- Download 25.01%
+- Download 25.53%
+- Download 26.05%
+- Download 26.57%
+- Download 27.09%
+- Download 27.61%
+- Download 28.13%
+- Download 28.66%
+- Download 29.18%
+- Download 29.70%
+- Download 30.22%
+- Download 30.74%
+- Download 31.26%
+- Download 31.78%
+- Download 32.30%
+- Download 32.82%
+- Download 33.34%
+- Download 33.87%
+- Download 34.39%
+- Download 34.91%
+- Download 35.43%
+- Download 35.95%
+- Download 36.47%
+- Download 36.99%
+- Download 37.51%
+- Download 38.03%
+- Download 38.55%
+- Download 39.08%
+- Download 39.60%
+- Download 40.12%
+- Download 40.64%
+- Download 41.16%
+- Download 41.68%
+- Download 42.20%
+- Download 42.72%
+- Download 43.24%
+- Download 43.76%
+- Download 44.29%
+- Download 44.81%
+- Download 45.33%
+- Download 45.85%
+- Download 46.37%
+- Download 46.89%
+- Download 47.41%
+- Download 47.93%
+- Download 48.45%
+- Download 48.97%
+- Download 49.50%
+- Download 50.02%
+- Download 50.54%
+- Download 51.06%
+- Download 51.58%
+- Download 52.10%
+- Download 52.62%
+- Download 53.14%
+- Download 53.66%
+- Download 54.18%
+- Download 54.71%
+- Download 55.23%
+- Download 55.75%
+- Download 56.27%
+- Download 56.79%
+- Download 57.31%
+- Download 57.83%
+- Download 58.35%
+- Download 58.87%
+- Download 59.39%
+- Download 59.92%
+- Download 60.44%
+- Download 60.96%
+- Download 61.48%
+- Download 62.00%
+- Download 62.52%
+- Download 63.04%
+- Download 63.56%
+- Download 64.08%
+- Download 64.60%
+- Download 65.13%
+- Download 65.65%
+- Download 66.17%
+- Download 66.69%
+- Download 67.21%
+- Download 67.73%
+- Download 68.25%
+- Download 68.77%
+- Download 69.29%
+- Download 69.81%
+- Download 70.34%
+- Download 70.86%
+- Download 71.38%
+- Download 71.90%
+- Download 72.42%
+- Download 72.94%
+- Download 73.46%
+- Download 73.98%
+- Download 74.50%
+- Download 75.02%
+- Download 75.55%
+- Download 76.07%
+- Download 76.59%
+- Download 77.11%
+- Download 77.63%
+- Download 78.15%
+- Download 78.67%
+- Download 79.19%
+- Download 79.71%
+- Download 80.23%
+- Download 80.76%
+- Download 81.28%
+- Download 81.80%
+- Download 82.32%
+- Download 82.84%
+- Download 83.36%
+- Download 83.88%
+- Download 84.40%
+- Download 84.92%
+- Download 85.44%
+- Download 85.97%
+- Download 86.49%
+- Download 87.01%
+- Download 87.53%
+- Download 88.05%
+- Download 88.57%
+- Download 89.09%
+- Download 89.61%
+- Download 90.13%
+- Download 90.65%
+- Download 91.18%
+- Download 91.70%
+- Download 92.22%
+- Download 92.74%
+- Download 93.26%
+- Download 93.78%
+- Download 94.30%
+- Download 94.82%
+- Download 95.34%
+- Download 95.86%
+- Download 96.39%
+- Download 96.91%
+- Download 97.43%
+- Download 97.95%
+- Download 98.47%
+- Download 98.99%
+- Download 99.51%
+- Download 100.03%
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading openssl
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/openssl
+[INFO]:    -> running basename https://www.openssl.org/source/openssl-1.1.1w.tar.gz
+
+           working: openssl-1.1.1w.tar.gz                                                                        
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-openssl-1.1.1w.tar.gz
+[INFO]:    Downloading openssl from https://www.openssl.org/source/openssl-1.1.1w.tar.gz
+- Download 0.00%
+- Download 0.08%
+- Download 0.17%
+- Download 0.25%
+- Download 0.33%
+- Download 0.41%
+- Download 0.50%
+- Download 0.58%
+- Download 0.66%
+- Download 0.75%
+- Download 0.83%
+- Download 0.91%
+- Download 0.99%
+- Download 1.08%
+- Download 1.16%
+- Download 1.24%
+- Download 1.32%
+- Download 1.41%
+- Download 1.49%
+- Download 1.57%
+- Download 1.66%
+- Download 1.74%
+- Download 1.82%
+- Download 1.90%
+- Download 1.99%
+- Download 2.07%
+- Download 2.15%
+- Download 2.24%
+- Download 2.32%
+- Download 2.40%
+- Download 2.48%
+- Download 2.57%
+- Download 2.65%
+- Download 2.73%
+- Download 2.82%
+- Download 2.90%
+- Download 2.98%
+- Download 3.06%
+- Download 3.15%
+- Download 3.23%
+- Download 3.31%
+- Download 3.39%
+- Download 3.48%
+- Download 3.56%
+- Download 3.64%
+- Download 3.73%
+- Download 3.81%
+- Download 3.89%
+- Download 3.97%
+- Download 4.06%
+- Download 4.14%
+- Download 4.22%
+- Download 4.31%
+- Download 4.39%
+- Download 4.47%
+- Download 4.55%
+- Download 4.64%
+- Download 4.72%
+- Download 4.80%
+- Download 4.89%
+- Download 4.97%
+- Download 5.05%
+- Download 5.13%
+- Download 5.22%
+- Download 5.30%
+- Download 5.38%
+- Download 5.46%
+- Download 5.55%
+- Download 5.63%
+- Download 5.71%
+- Download 5.80%
+- Download 5.88%
+- Download 5.96%
+- Download 6.04%
+- Download 6.13%
+- Download 6.21%
+- Download 6.29%
+- Download 6.38%
+- Download 6.46%
+- Download 6.54%
+- Download 6.62%
+- Download 6.71%
+- Download 6.79%
+- Download 6.87%
+- Download 6.96%
+- Download 7.04%
+- Download 7.12%
+- Download 7.20%
+- Download 7.29%
+- Download 7.37%
+- Download 7.45%
+- Download 7.54%
+- Download 7.62%
+- Download 7.70%
+- Download 7.78%
+- Download 7.87%
+- Download 7.95%
+- Download 8.03%
+- Download 8.11%
+- Download 8.20%
+- Download 8.28%
+- Download 8.36%
+- Download 8.45%
+- Download 8.53%
+- Download 8.61%
+- Download 8.69%
+- Download 8.78%
+- Download 8.86%
+- Download 8.94%
+- Download 9.03%
+- Download 9.11%
+- Download 9.19%
+- Download 9.27%
+- Download 9.36%
+- Download 9.44%
+- Download 9.52%
+- Download 9.61%
+- Download 9.69%
+- Download 9.77%
+- Download 9.85%
+- Download 9.94%
+- Download 10.02%
+- Download 10.10%
+- Download 10.18%
+- Download 10.27%
+- Download 10.35%
+- Download 10.43%
+- Download 10.52%
+- Download 10.60%
+- Download 10.68%
+- Download 10.76%
+- Download 10.85%
+- Download 10.93%
+- Download 11.01%
+- Download 11.10%
+- Download 11.18%
+- Download 11.26%
+- Download 11.34%
+- Download 11.43%
+- Download 11.51%
+- Download 11.59%
+- Download 11.68%
+- Download 11.76%
+- Download 11.84%
+- Download 11.92%
+- Download 12.01%
+- Download 12.09%
+- Download 12.17%
+- Download 12.25%
+- Download 12.34%
+- Download 12.42%
+- Download 12.50%
+Download failed: <urlopen error retrieval incomplete: got only 1234008 out of 9893384 bytes>; retrying in 1 second(s)...- Download 0.00%
+- Download 0.08%
+- Download 0.17%
+- Download 0.25%
+- Download 0.33%
+- Download 0.41%
+- Download 0.50%
+- Download 0.58%
+- Download 0.66%
+- Download 0.75%
+- Download 0.83%
+- Download 0.91%
+- Download 0.99%
+- Download 1.08%
+- Download 1.16%
+- Download 1.24%
+- Download 1.32%
+- Download 1.41%
+- Download 1.49%
+- Download 1.57%
+- Download 1.66%
+- Download 1.74%
+- Download 1.82%
+- Download 1.90%
+- Download 1.99%
+- Download 2.07%
+- Download 2.15%
+- Download 2.24%
+- Download 2.32%
+- Download 2.40%
+- Download 2.48%
+- Download 2.57%
+- Download 2.65%
+- Download 2.73%
+- Download 2.82%
+- Download 2.90%
+- Download 2.98%
+- Download 3.06%
+- Download 3.15%
+- Download 3.23%
+- Download 3.31%
+- Download 3.39%
+- Download 3.48%
+- Download 3.56%
+- Download 3.64%
+- Download 3.73%
+- Download 3.81%
+- Download 3.89%
+- Download 3.97%
+- Download 4.06%
+- Download 4.14%
+- Download 4.22%
+- Download 4.31%
+- Download 4.39%
+- Download 4.47%
+- Download 4.55%
+- Download 4.64%
+- Download 4.72%
+- Download 4.80%
+- Download 4.89%
+- Download 4.97%
+- Download 5.05%
+- Download 5.13%
+- Download 5.22%
+- Download 5.30%
+- Download 5.38%
+- Download 5.46%
+- Download 5.55%
+- Download 5.63%
+- Download 5.71%
+- Download 5.80%
+- Download 5.88%
+- Download 5.96%
+- Download 6.04%
+- Download 6.13%
+- Download 6.21%
+- Download 6.29%
+- Download 6.38%
+- Download 6.46%
+- Download 6.54%
+- Download 6.62%
+- Download 6.71%
+- Download 6.79%
+- Download 6.87%
+- Download 6.96%
+- Download 7.04%
+- Download 7.12%
+- Download 7.20%
+- Download 7.29%
+- Download 7.37%
+- Download 7.45%
+- Download 7.54%
+- Download 7.62%
+- Download 7.70%
+- Download 7.78%
+- Download 7.87%
+- Download 7.95%
+- Download 8.03%
+- Download 8.11%
+- Download 8.20%
+- Download 8.28%
+- Download 8.36%
+- Download 8.45%
+- Download 8.53%
+- Download 8.61%
+- Download 8.69%
+- Download 8.78%
+- Download 8.86%
+- Download 8.94%
+- Download 9.03%
+- Download 9.11%
+- Download 9.19%
+- Download 9.27%
+- Download 9.36%
+- Download 9.44%
+- Download 9.52%
+- Download 9.61%
+- Download 9.69%
+- Download 9.77%
+- Download 9.85%
+- Download 9.94%
+- Download 10.02%
+- Download 10.10%
+- Download 10.18%
+- Download 10.27%
+- Download 10.35%
+- Download 10.43%
+- Download 10.52%
+- Download 10.60%
+- Download 10.68%
+- Download 10.76%
+- Download 10.85%
+- Download 10.93%
+- Download 11.01%
+- Download 11.10%
+- Download 11.18%
+- Download 11.26%
+- Download 11.34%
+- Download 11.43%
+- Download 11.51%
+- Download 11.59%
+- Download 11.68%
+- Download 11.76%
+- Download 11.84%
+- Download 11.92%
+- Download 12.01%
+- Download 12.09%
+- Download 12.17%
+- Download 12.25%
+- Download 12.34%
+- Download 12.42%
+- Download 12.50%
+- Download 12.59%
+- Download 12.67%
+- Download 12.75%
+- Download 12.83%
+- Download 12.92%
+- Download 13.00%
+- Download 13.08%
+- Download 13.17%
+- Download 13.25%
+- Download 13.33%
+- Download 13.41%
+- Download 13.50%
+- Download 13.58%
+- Download 13.66%
+- Download 13.75%
+- Download 13.83%
+- Download 13.91%
+- Download 13.99%
+- Download 14.08%
+- Download 14.16%
+- Download 14.24%
+- Download 14.32%
+- Download 14.41%
+- Download 14.49%
+- Download 14.57%
+- Download 14.66%
+- Download 14.74%
+- Download 14.82%
+- Download 14.90%
+- Download 14.99%
+- Download 15.07%
+- Download 15.15%
+- Download 15.24%
+- Download 15.32%
+- Download 15.40%
+- Download 15.48%
+- Download 15.57%
+- Download 15.65%
+- Download 15.73%
+- Download 15.82%
+- Download 15.90%
+- Download 15.98%
+- Download 16.06%
+- Download 16.15%
+- Download 16.23%
+- Download 16.31%
+- Download 16.39%
+- Download 16.48%
+- Download 16.56%
+- Download 16.64%
+- Download 16.73%
+- Download 16.81%
+- Download 16.89%
+- Download 16.97%
+- Download 17.06%
+- Download 17.14%
+- Download 17.22%
+- Download 17.31%
+- Download 17.39%
+- Download 17.47%
+- Download 17.55%
+- Download 17.64%
+- Download 17.72%
+- Download 17.80%
+- Download 17.89%
+- Download 17.97%
+- Download 18.05%
+- Download 18.13%
+- Download 18.22%
+- Download 18.30%
+- Download 18.38%
+- Download 18.47%
+- Download 18.55%
+- Download 18.63%
+- Download 18.71%
+- Download 18.80%
+- Download 18.88%
+- Download 18.96%
+- Download 19.04%
+- Download 19.13%
+- Download 19.21%
+- Download 19.29%
+- Download 19.38%
+- Download 19.46%
+- Download 19.54%
+- Download 19.62%
+- Download 19.71%
+- Download 19.79%
+- Download 19.87%
+- Download 19.96%
+- Download 20.04%
+- Download 20.12%
+- Download 20.20%
+- Download 20.29%
+- Download 20.37%
+- Download 20.45%
+- Download 20.54%
+- Download 20.62%
+- Download 20.70%
+- Download 20.78%
+- Download 20.87%
+- Download 20.95%
+- Download 21.03%
+- Download 21.11%
+- Download 21.20%
+- Download 21.28%
+- Download 21.36%
+- Download 21.45%
+- Download 21.53%
+- Download 21.61%
+- Download 21.69%
+- Download 21.78%
+- Download 21.86%
+- Download 21.94%
+- Download 22.03%
+- Download 22.11%
+- Download 22.19%
+- Download 22.27%
+- Download 22.36%
+- Download 22.44%
+- Download 22.52%
+- Download 22.61%
+- Download 22.69%
+- Download 22.77%
+- Download 22.85%
+- Download 22.94%
+- Download 23.02%
+- Download 23.10%
+- Download 23.18%
+- Download 23.27%
+- Download 23.35%
+- Download 23.43%
+- Download 23.52%
+- Download 23.60%
+- Download 23.68%
+- Download 23.76%
+- Download 23.85%
+- Download 23.93%
+- Download 24.01%
+- Download 24.10%
+- Download 24.18%
+- Download 24.26%
+- Download 24.34%
+- Download 24.43%
+- Download 24.51%
+- Download 24.59%
+- Download 24.68%
+- Download 24.76%
+- Download 24.84%
+- Download 24.92%
+- Download 25.01%
+- Download 25.09%
+- Download 25.17%
+- Download 25.25%
+- Download 25.34%
+- Download 25.42%
+- Download 25.50%
+- Download 25.59%
+- Download 25.67%
+- Download 25.75%
+- Download 25.83%
+- Download 25.92%
+- Download 26.00%
+- Download 26.08%
+- Download 26.17%
+- Download 26.25%
+- Download 26.33%
+- Download 26.41%
+- Download 26.50%
+- Download 26.58%
+- Download 26.66%
+- Download 26.75%
+- Download 26.83%
+- Download 26.91%
+- Download 26.99%
+- Download 27.08%
+- Download 27.16%
+- Download 27.24%
+- Download 27.32%
+- Download 27.41%
+- Download 27.49%
+- Download 27.57%
+- Download 27.66%
+- Download 27.74%
+- Download 27.82%
+- Download 27.90%
+- Download 27.99%
+- Download 28.07%
+- Download 28.15%
+- Download 28.24%
+- Download 28.32%
+- Download 28.40%
+- Download 28.48%
+- Download 28.57%
+- Download 28.65%
+- Download 28.73%
+- Download 28.82%
+- Download 28.90%
+- Download 28.98%
+- Download 29.06%
+- Download 29.15%
+- Download 29.23%
+- Download 29.31%
+- Download 29.39%
+- Download 29.48%
+- Download 29.56%
+- Download 29.64%
+- Download 29.73%
+- Download 29.81%
+- Download 29.89%
+- Download 29.97%
+- Download 30.06%
+- Download 30.14%
+- Download 30.22%
+- Download 30.31%
+- Download 30.39%
+- Download 30.47%
+- Download 30.55%
+- Download 30.64%
+- Download 30.72%
+- Download 30.80%
+- Download 30.89%
+- Download 30.97%
+- Download 31.05%
+- Download 31.13%
+- Download 31.22%
+- Download 31.30%
+- Download 31.38%
+- Download 31.47%
+- Download 31.55%
+- Download 31.63%
+- Download 31.71%
+- Download 31.80%
+- Download 31.88%
+- Download 31.96%
+- Download 32.04%
+- Download 32.13%
+- Download 32.21%
+- Download 32.29%
+- Download 32.38%
+- Download 32.46%
+- Download 32.54%
+- Download 32.62%
+- Download 32.71%
+- Download 32.79%
+- Download 32.87%
+- Download 32.96%
+- Download 33.04%
+- Download 33.12%
+- Download 33.20%
+- Download 33.29%
+- Download 33.37%
+- Download 33.45%
+- Download 33.54%
+- Download 33.62%
+- Download 33.70%
+- Download 33.78%
+- Download 33.87%
+- Download 33.95%
+- Download 34.03%
+- Download 34.11%
+- Download 34.20%
+- Download 34.28%
+- Download 34.36%
+- Download 34.45%
+- Download 34.53%
+- Download 34.61%
+- Download 34.69%
+- Download 34.78%
+- Download 34.86%
+- Download 34.94%
+- Download 35.03%
+- Download 35.11%
+- Download 35.19%
+- Download 35.27%
+- Download 35.36%
+- Download 35.44%
+- Download 35.52%
+- Download 35.61%
+- Download 35.69%
+- Download 35.77%
+- Download 35.85%
+- Download 35.94%
+- Download 36.02%
+- Download 36.10%
+- Download 36.18%
+- Download 36.27%
+- Download 36.35%
+- Download 36.43%
+- Download 36.52%
+- Download 36.60%
+- Download 36.68%
+- Download 36.76%
+- Download 36.85%
+- Download 36.93%
+- Download 37.01%
+- Download 37.10%
+- Download 37.18%
+- Download 37.26%
+- Download 37.34%
+- Download 37.43%
+- Download 37.51%
+- Download 37.59%
+- Download 37.68%
+- Download 37.76%
+- Download 37.84%
+- Download 37.92%
+- Download 38.01%
+- Download 38.09%
+- Download 38.17%
+- Download 38.25%
+- Download 38.34%
+- Download 38.42%
+- Download 38.50%
+- Download 38.59%
+- Download 38.67%
+- Download 38.75%
+- Download 38.83%
+- Download 38.92%
+- Download 39.00%
+- Download 39.08%
+- Download 39.17%
+- Download 39.25%
+- Download 39.33%
+- Download 39.41%
+- Download 39.50%
+- Download 39.58%
+- Download 39.66%
+- Download 39.75%
+- Download 39.83%
+- Download 39.91%
+- Download 39.99%
+- Download 40.08%
+- Download 40.16%
+- Download 40.24%
+- Download 40.32%
+- Download 40.41%
+- Download 40.49%
+- Download 40.57%
+- Download 40.66%
+- Download 40.74%
+- Download 40.82%
+- Download 40.90%
+- Download 40.99%
+- Download 41.07%
+- Download 41.15%
+- Download 41.24%
+- Download 41.32%
+- Download 41.40%
+- Download 41.48%
+- Download 41.57%
+- Download 41.65%
+- Download 41.73%
+- Download 41.82%
+- Download 41.90%
+- Download 41.98%
+- Download 42.06%
+- Download 42.15%
+- Download 42.23%
+- Download 42.31%
+- Download 42.40%
+- Download 42.48%
+- Download 42.56%
+- Download 42.64%
+- Download 42.73%
+- Download 42.81%
+- Download 42.89%
+- Download 42.97%
+- Download 43.06%
+- Download 43.14%
+- Download 43.22%
+- Download 43.31%
+- Download 43.39%
+- Download 43.47%
+- Download 43.55%
+- Download 43.64%
+- Download 43.72%
+- Download 43.80%
+- Download 43.89%
+- Download 43.97%
+- Download 44.05%
+- Download 44.13%
+- Download 44.22%
+- Download 44.30%
+- Download 44.38%
+- Download 44.47%
+- Download 44.55%
+- Download 44.63%
+- Download 44.71%
+- Download 44.80%
+- Download 44.88%
+- Download 44.96%
+- Download 45.04%
+- Download 45.13%
+- Download 45.21%
+- Download 45.29%
+- Download 45.38%
+- Download 45.46%
+- Download 45.54%
+- Download 45.62%
+- Download 45.71%
+- Download 45.79%
+- Download 45.87%
+- Download 45.96%
+- Download 46.04%
+- Download 46.12%
+- Download 46.20%
+- Download 46.29%
+- Download 46.37%
+- Download 46.45%
+- Download 46.54%
+- Download 46.62%
+- Download 46.70%
+- Download 46.78%
+- Download 46.87%
+- Download 46.95%
+- Download 47.03%
+- Download 47.11%
+- Download 47.20%
+- Download 47.28%
+- Download 47.36%
+- Download 47.45%
+- Download 47.53%
+- Download 47.61%
+- Download 47.69%
+- Download 47.78%
+- Download 47.86%
+- Download 47.94%
+- Download 48.03%
+- Download 48.11%
+- Download 48.19%
+- Download 48.27%
+- Download 48.36%
+- Download 48.44%
+- Download 48.52%
+- Download 48.61%
+- Download 48.69%
+- Download 48.77%
+- Download 48.85%
+- Download 48.94%
+- Download 49.02%
+- Download 49.10%
+- Download 49.18%
+- Download 49.27%
+- Download 49.35%
+- Download 49.43%
+- Download 49.52%
+- Download 49.60%
+- Download 49.68%
+- Download 49.76%
+- Download 49.85%
+- Download 49.93%
+- Download 50.01%
+- Download 50.10%
+- Download 50.18%
+- Download 50.26%
+- Download 50.34%
+- Download 50.43%
+- Download 50.51%
+- Download 50.59%
+- Download 50.68%
+- Download 50.76%
+- Download 50.84%
+- Download 50.92%
+- Download 51.01%
+- Download 51.09%
+- Download 51.17%
+- Download 51.25%
+- Download 51.34%
+- Download 51.42%
+- Download 51.50%
+- Download 51.59%
+- Download 51.67%
+- Download 51.75%
+- Download 51.83%
+- Download 51.92%
+- Download 52.00%
+- Download 52.08%
+- Download 52.17%
+- Download 52.25%
+- Download 52.33%
+- Download 52.41%
+- Download 52.50%
+- Download 52.58%
+- Download 52.66%
+- Download 52.75%
+- Download 52.83%
+- Download 52.91%
+- Download 52.99%
+- Download 53.08%
+- Download 53.16%
+- Download 53.24%
+- Download 53.33%
+- Download 53.41%
+- Download 53.49%
+- Download 53.57%
+- Download 53.66%
+- Download 53.74%
+- Download 53.82%
+- Download 53.90%
+- Download 53.99%
+- Download 54.07%
+- Download 54.15%
+- Download 54.24%
+- Download 54.32%
+- Download 54.40%
+- Download 54.48%
+- Download 54.57%
+- Download 54.65%
+- Download 54.73%
+- Download 54.82%
+- Download 54.90%
+- Download 54.98%
+- Download 55.06%
+- Download 55.15%
+- Download 55.23%
+- Download 55.31%
+- Download 55.40%
+- Download 55.48%
+- Download 55.56%
+- Download 55.64%
+- Download 55.73%
+- Download 55.81%
+- Download 55.89%
+- Download 55.97%
+- Download 56.06%
+- Download 56.14%
+- Download 56.22%
+- Download 56.31%
+- Download 56.39%
+- Download 56.47%
+- Download 56.55%
+- Download 56.64%
+- Download 56.72%
+- Download 56.80%
+- Download 56.89%
+- Download 56.97%
+- Download 57.05%
+- Download 57.13%
+- Download 57.22%
+- Download 57.30%
+- Download 57.38%
+- Download 57.47%
+- Download 57.55%
+- Download 57.63%
+- Download 57.71%
+- Download 57.80%
+- Download 57.88%
+- Download 57.96%
+- Download 58.04%
+- Download 58.13%
+- Download 58.21%
+- Download 58.29%
+- Download 58.38%
+- Download 58.46%
+- Download 58.54%
+- Download 58.62%
+- Download 58.71%
+- Download 58.79%
+- Download 58.87%
+- Download 58.96%
+- Download 59.04%
+- Download 59.12%
+- Download 59.20%
+- Download 59.29%
+- Download 59.37%
+- Download 59.45%
+- Download 59.54%
+- Download 59.62%
+- Download 59.70%
+- Download 59.78%
+- Download 59.87%
+- Download 59.95%
+- Download 60.03%
+- Download 60.11%
+- Download 60.20%
+- Download 60.28%
+- Download 60.36%
+- Download 60.45%
+- Download 60.53%
+- Download 60.61%
+- Download 60.69%
+- Download 60.78%
+- Download 60.86%
+- Download 60.94%
+- Download 61.03%
+- Download 61.11%
+- Download 61.19%
+- Download 61.27%
+- Download 61.36%
+- Download 61.44%
+- Download 61.52%
+- Download 61.61%
+- Download 61.69%
+- Download 61.77%
+- Download 61.85%
+- Download 61.94%
+- Download 62.02%
+- Download 62.10%
+- Download 62.18%
+- Download 62.27%
+- Download 62.35%
+- Download 62.43%
+- Download 62.52%
+- Download 62.60%
+- Download 62.68%
+- Download 62.76%
+- Download 62.85%
+- Download 62.93%
+- Download 63.01%
+- Download 63.10%
+- Download 63.18%
+- Download 63.26%
+- Download 63.34%
+- Download 63.43%
+- Download 63.51%
+- Download 63.59%
+- Download 63.68%
+- Download 63.76%
+- Download 63.84%
+- Download 63.92%
+- Download 64.01%
+- Download 64.09%
+- Download 64.17%
+- Download 64.25%
+- Download 64.34%
+- Download 64.42%
+- Download 64.50%
+- Download 64.59%
+- Download 64.67%
+- Download 64.75%
+- Download 64.83%
+- Download 64.92%
+- Download 65.00%
+- Download 65.08%
+- Download 65.17%
+- Download 65.25%
+- Download 65.33%
+- Download 65.41%
+- Download 65.50%
+- Download 65.58%
+- Download 65.66%
+- Download 65.75%
+- Download 65.83%
+- Download 65.91%
+- Download 65.99%
+- Download 66.08%
+- Download 66.16%
+- Download 66.24%
+- Download 66.33%
+- Download 66.41%
+- Download 66.49%
+- Download 66.57%
+- Download 66.66%
+- Download 66.74%
+- Download 66.82%
+- Download 66.90%
+- Download 66.99%
+- Download 67.07%
+- Download 67.15%
+- Download 67.24%
+- Download 67.32%
+- Download 67.40%
+- Download 67.48%
+- Download 67.57%
+- Download 67.65%
+- Download 67.73%
+- Download 67.82%
+- Download 67.90%
+- Download 67.98%
+- Download 68.06%
+- Download 68.15%
+- Download 68.23%
+- Download 68.31%
+- Download 68.40%
+- Download 68.48%
+- Download 68.56%
+- Download 68.64%
+- Download 68.73%
+- Download 68.81%
+- Download 68.89%
+- Download 68.97%
+- Download 69.06%
+- Download 69.14%
+- Download 69.22%
+- Download 69.31%
+- Download 69.39%
+- Download 69.47%
+- Download 69.55%
+- Download 69.64%
+- Download 69.72%
+- Download 69.80%
+- Download 69.89%
+- Download 69.97%
+- Download 70.05%
+- Download 70.13%
+- Download 70.22%
+- Download 70.30%
+- Download 70.38%
+- Download 70.47%
+- Download 70.55%
+- Download 70.63%
+- Download 70.71%
+- Download 70.80%
+- Download 70.88%
+- Download 70.96%
+- Download 71.04%
+- Download 71.13%
+- Download 71.21%
+- Download 71.29%
+- Download 71.38%
+- Download 71.46%
+- Download 71.54%
+- Download 71.62%
+- Download 71.71%
+- Download 71.79%
+- Download 71.87%
+- Download 71.96%
+- Download 72.04%
+- Download 72.12%
+- Download 72.20%
+- Download 72.29%
+- Download 72.37%
+- Download 72.45%
+- Download 72.54%
+- Download 72.62%
+- Download 72.70%
+- Download 72.78%
+- Download 72.87%
+- Download 72.95%
+- Download 73.03%
+- Download 73.11%
+- Download 73.20%
+- Download 73.28%
+- Download 73.36%
+- Download 73.45%
+- Download 73.53%
+- Download 73.61%
+- Download 73.69%
+- Download 73.78%
+- Download 73.86%
+- Download 73.94%
+- Download 74.03%
+- Download 74.11%
+- Download 74.19%
+- Download 74.27%
+- Download 74.36%
+- Download 74.44%
+- Download 74.52%
+- Download 74.61%
+- Download 74.69%
+- Download 74.77%
+- Download 74.85%
+- Download 74.94%
+- Download 75.02%
+- Download 75.10%
+- Download 75.18%
+- Download 75.27%
+- Download 75.35%
+- Download 75.43%
+- Download 75.52%
+- Download 75.60%
+- Download 75.68%
+- Download 75.76%
+- Download 75.85%
+- Download 75.93%
+- Download 76.01%
+- Download 76.10%
+- Download 76.18%
+- Download 76.26%
+- Download 76.34%
+- Download 76.43%
+- Download 76.51%
+- Download 76.59%
+- Download 76.68%
+- Download 76.76%
+- Download 76.84%
+- Download 76.92%
+- Download 77.01%
+- Download 77.09%
+- Download 77.17%
+- Download 77.26%
+- Download 77.34%
+- Download 77.42%
+- Download 77.50%
+- Download 77.59%
+- Download 77.67%
+- Download 77.75%
+- Download 77.83%
+- Download 77.92%
+- Download 78.00%
+- Download 78.08%
+- Download 78.17%
+- Download 78.25%
+- Download 78.33%
+- Download 78.41%
+- Download 78.50%
+- Download 78.58%
+- Download 78.66%
+- Download 78.75%
+- Download 78.83%
+- Download 78.91%
+- Download 78.99%
+- Download 79.08%
+- Download 79.16%
+- Download 79.24%
+- Download 79.33%
+- Download 79.41%
+- Download 79.49%
+- Download 79.57%
+- Download 79.66%
+- Download 79.74%
+- Download 79.82%
+- Download 79.90%
+- Download 79.99%
+- Download 80.07%
+- Download 80.15%
+- Download 80.24%
+- Download 80.32%
+- Download 80.40%
+- Download 80.48%
+- Download 80.57%
+- Download 80.65%
+- Download 80.73%
+- Download 80.82%
+- Download 80.90%
+- Download 80.98%
+- Download 81.06%
+- Download 81.15%
+- Download 81.23%
+- Download 81.31%
+- Download 81.40%
+- Download 81.48%
+- Download 81.56%
+- Download 81.64%
+- Download 81.73%
+- Download 81.81%
+- Download 81.89%
+- Download 81.97%
+- Download 82.06%
+- Download 82.14%
+- Download 82.22%
+- Download 82.31%
+- Download 82.39%
+- Download 82.47%
+- Download 82.55%
+- Download 82.64%
+- Download 82.72%
+- Download 82.80%
+- Download 82.89%
+- Download 82.97%
+- Download 83.05%
+- Download 83.13%
+- Download 83.22%
+- Download 83.30%
+- Download 83.38%
+- Download 83.47%
+- Download 83.55%
+- Download 83.63%
+- Download 83.71%
+- Download 83.80%
+- Download 83.88%
+- Download 83.96%
+- Download 84.04%
+- Download 84.13%
+- Download 84.21%
+- Download 84.29%
+- Download 84.38%
+- Download 84.46%
+- Download 84.54%
+- Download 84.62%
+- Download 84.71%
+- Download 84.79%
+- Download 84.87%
+- Download 84.96%
+- Download 85.04%
+- Download 85.12%
+- Download 85.20%
+- Download 85.29%
+- Download 85.37%
+- Download 85.45%
+- Download 85.54%
+- Download 85.62%
+- Download 85.70%
+- Download 85.78%
+- Download 85.87%
+- Download 85.95%
+- Download 86.03%
+- Download 86.11%
+- Download 86.20%
+- Download 86.28%
+- Download 86.36%
+- Download 86.45%
+- Download 86.53%
+- Download 86.61%
+- Download 86.69%
+- Download 86.78%
+- Download 86.86%
+- Download 86.94%
+- Download 87.03%
+- Download 87.11%
+- Download 87.19%
+- Download 87.27%
+- Download 87.36%
+- Download 87.44%
+- Download 87.52%
+- Download 87.61%
+- Download 87.69%
+- Download 87.77%
+- Download 87.85%
+- Download 87.94%
+- Download 88.02%
+- Download 88.10%
+- Download 88.18%
+- Download 88.27%
+- Download 88.35%
+- Download 88.43%
+- Download 88.52%
+- Download 88.60%
+- Download 88.68%
+- Download 88.76%
+- Download 88.85%
+- Download 88.93%
+- Download 89.01%
+- Download 89.10%
+- Download 89.18%
+- Download 89.26%
+- Download 89.34%
+- Download 89.43%
+- Download 89.51%
+- Download 89.59%
+- Download 89.68%
+- Download 89.76%
+- Download 89.84%
+- Download 89.92%
+- Download 90.01%
+- Download 90.09%
+- Download 90.17%
+- Download 90.26%
+- Download 90.34%
+- Download 90.42%
+- Download 90.50%
+- Download 90.59%
+- Download 90.67%
+- Download 90.75%
+- Download 90.83%
+- Download 90.92%
+- Download 91.00%
+- Download 91.08%
+- Download 91.17%
+- Download 91.25%
+- Download 91.33%
+- Download 91.41%
+- Download 91.50%
+- Download 91.58%
+- Download 91.66%
+- Download 91.75%
+- Download 91.83%
+- Download 91.91%
+- Download 91.99%
+- Download 92.08%
+- Download 92.16%
+- Download 92.24%
+- Download 92.33%
+- Download 92.41%
+- Download 92.49%
+- Download 92.57%
+- Download 92.66%
+- Download 92.74%
+- Download 92.82%
+- Download 92.90%
+- Download 92.99%
+- Download 93.07%
+- Download 93.15%
+- Download 93.24%
+- Download 93.32%
+- Download 93.40%
+- Download 93.48%
+- Download 93.57%
+- Download 93.65%
+- Download 93.73%
+- Download 93.82%
+- Download 93.90%
+- Download 93.98%
+- Download 94.06%
+- Download 94.15%
+- Download 94.23%
+- Download 94.31%
+- Download 94.40%
+- Download 94.48%
+- Download 94.56%
+- Download 94.64%
+- Download 94.73%
+- Download 94.81%
+- Download 94.89%
+- Download 94.97%
+- Download 95.06%
+- Download 95.14%
+- Download 95.22%
+- Download 95.31%
+- Download 95.39%
+- Download 95.47%
+- Download 95.55%
+- Download 95.64%
+- Download 95.72%
+- Download 95.80%
+- Download 95.89%
+- Download 95.97%
+- Download 96.05%
+- Download 96.13%
+- Download 96.22%
+- Download 96.30%
+- Download 96.38%
+- Download 96.47%
+- Download 96.55%
+- Download 96.63%
+- Download 96.71%
+- Download 96.80%
+- Download 96.88%
+- Download 96.96%
+- Download 97.04%
+- Download 97.13%
+- Download 97.21%
+- Download 97.29%
+- Download 97.38%
+- Download 97.46%
+- Download 97.54%
+- Download 97.62%
+- Download 97.71%
+- Download 97.79%
+- Download 97.87%
+- Download 97.96%
+- Download 98.04%
+- Download 98.12%
+- Download 98.20%
+- Download 98.29%
+- Download 98.37%
+- Download 98.45%
+- Download 98.54%
+- Download 98.62%
+- Download 98.70%
+- Download 98.78%
+- Download 98.87%
+- Download 98.95%
+- Download 99.03%
+- Download 99.11%
+- Download 99.20%
+- Download 99.28%
+- Download 99.36%
+- Download 99.45%
+- Download 99.53%
+- Download 99.61%
+- Download 99.69%
+- Download 99.78%
+- Download 99.86%
+- Download 99.94%
+- Download 100.03%
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading png
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/png
+[INFO]:    -> running basename https://github.com/glennrp/libpng/archive/v1.6.37.zip
+
+           working: v1.6.37.zip                                                                                  
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-v1.6.37.zip
+[INFO]:    Downloading png from https://github.com/glennrp/libpng/archive/v1.6.37.zip
+Download failed: Remote end closed connection without response; retrying in 1 second(s)...Download failed: <urlopen error [Errno 110] Connection timed out>; retrying in 2 second(s)...Download failed: <urlopen error [Errno 110] Connection timed out>; retrying in 4 second(s)...- Download 0.00%
+- Download 0.46%
+- Download 0.93%
+- Download 1.39%
+- Download 1.85%
+- Download 2.32%
+- Download 2.78%
+- Download 3.24%
+- Download 3.71%
+- Download 4.17%
+- Download 4.63%
+- Download 5.10%
+- Download 5.56%
+- Download 6.03%
+- Download 6.49%
+- Download 6.95%
+- Download 7.42%
+- Download 7.88%
+- Download 8.34%
+- Download 8.81%
+- Download 9.27%
+- Download 9.73%
+- Download 10.20%
+- Download 10.66%
+- Download 11.12%
+- Download 11.59%
+- Download 12.05%
+- Download 12.51%
+- Download 12.98%
+- Download 13.44%
+- Download 13.90%
+- Download 14.37%
+- Download 14.83%
+- Download 15.30%
+- Download 15.76%
+- Download 16.22%
+- Download 16.69%
+- Download 17.15%
+- Download 17.61%
+- Download 18.08%
+- Download 18.54%
+- Download 19.00%
+- Download 19.47%
+- Download 19.93%
+- Download 20.39%
+- Download 20.86%
+- Download 21.32%
+- Download 21.78%
+- Download 22.25%
+- Download 22.71%
+- Download 23.17%
+- Download 23.64%
+- Download 24.10%
+- Download 24.56%
+- Download 25.03%
+- Download 25.49%
+- Download 25.96%
+- Download 26.42%
+- Download 26.88%
+- Download 27.35%
+- Download 27.81%
+- Download 28.27%
+- Download 28.74%
+- Download 29.20%
+- Download 29.66%
+- Download 30.13%
+- Download 30.59%
+- Download 31.05%
+- Download 31.52%
+- Download 31.98%
+- Download 32.44%
+- Download 32.91%
+- Download 33.37%
+- Download 33.83%
+- Download 34.30%
+- Download 34.76%
+- Download 35.23%
+- Download 35.69%
+- Download 36.15%
+- Download 36.62%
+- Download 37.08%
+- Download 37.54%
+- Download 38.01%
+- Download 38.47%
+- Download 38.93%
+- Download 39.40%
+- Download 39.86%
+- Download 40.32%
+- Download 40.79%
+- Download 41.25%
+- Download 41.71%
+- Download 42.18%
+- Download 42.64%
+- Download 43.10%
+- Download 43.57%
+- Download 44.03%
+- Download 44.50%
+- Download 44.96%
+- Download 45.42%
+- Download 45.89%
+- Download 46.35%
+- Download 46.81%
+- Download 47.28%
+- Download 47.74%
+- Download 48.20%
+- Download 48.67%
+- Download 49.13%
+- Download 49.59%
+- Download 50.06%
+- Download 50.52%
+- Download 50.98%
+- Download 51.45%
+- Download 51.91%
+- Download 52.37%
+- Download 52.84%
+- Download 53.30%
+- Download 53.76%
+- Download 54.23%
+- Download 54.69%
+- Download 55.16%
+- Download 55.62%
+- Download 56.08%
+- Download 56.55%
+- Download 57.01%
+- Download 57.47%
+- Download 57.94%
+- Download 58.40%
+- Download 58.86%
+- Download 59.33%
+- Download 59.79%
+- Download 60.25%
+- Download 60.72%
+- Download 61.18%
+- Download 61.64%
+- Download 62.11%
+- Download 62.57%
+- Download 63.03%
+- Download 63.50%
+- Download 63.96%
+- Download 64.43%
+- Download 64.89%
+- Download 65.35%
+- Download 65.82%
+- Download 66.28%
+- Download 66.74%
+- Download 67.21%
+- Download 67.67%
+- Download 68.13%
+- Download 68.60%
+- Download 69.06%
+- Download 69.52%
+- Download 69.99%
+- Download 70.45%
+- Download 70.91%
+- Download 71.38%
+- Download 71.84%
+- Download 72.30%
+- Download 72.77%
+- Download 73.23%
+- Download 73.69%
+- Download 74.16%
+- Download 74.62%
+- Download 75.09%
+- Download 75.55%
+- Download 76.01%
+- Download 76.48%
+- Download 76.94%
+- Download 77.40%
+- Download 77.87%
+- Download 78.33%
+- Download 78.79%
+- Download 79.26%
+- Download 79.72%
+- Download 80.18%
+- Download 80.65%
+- Download 81.11%
+- Download 81.57%
+- Download 82.04%
+- Download 82.50%
+- Download 82.96%
+- Download 83.43%
+- Download 83.89%
+- Download 84.36%
+- Download 84.82%
+- Download 85.28%
+- Download 85.75%
+- Download 86.21%
+- Download 86.67%
+- Download 87.14%
+- Download 87.60%
+- Download 88.06%
+- Download 88.53%
+- Download 88.99%
+- Download 89.45%
+- Download 89.92%
+- Download 90.38%
+- Download 90.84%
+- Download 91.31%
+- Download 91.77%
+- Download 92.23%
+- Download 92.70%
+- Download 93.16%
+- Download 93.63%
+- Download 94.09%
+- Download 94.55%
+- Download 95.02%
+- Download 95.48%
+- Download 95.94%
+- Download 96.41%
+- Download 96.87%
+- Download 97.33%
+- Download 97.80%
+- Download 98.26%
+- Download 98.72%
+- Download 99.19%
+- Download 99.65%
+- Download 100.11%
+[INFO]:    <- directory context /root/apk
+[INFO]:    Downloading sdl2_image
+[INFO]:    -> directory context /root/.local/share/python-for-android/packages/sdl2_image
+[INFO]:    -> running basename https://github.com/libsdl-org/SDL_image/releases/download/releas...(and 31 more)
+
+           working: SDL2_image-2.8.0.tar.gz                                                                      
+                                                                                                                 
+[INFO]:    -> running rm -f .mark-SDL2_image-2.8.0.tar.gz
+[INFO]:    Downloading sdl2_image from https://github.com/libsdl-org/SDL_image/releases/download/release-2.8.0/SDL2_image-2.8.0.tar.gz
+- Download 0.00%
+- Download 0.07%
+- Download 0.14%
+- Download 0.22%
+- Download 0.29%
+- Download 0.36%
+- Download 0.43%
+- Download 0.51%
+- Download 0.58%
+- Download 0.65%
+Download failed: [Errno 104] Connection reset by peer; retrying in 1 second(s)...Download failed: Remote end closed connection without response; retrying in 2 second(s)...Download failed: <urlopen error [Errno 110] Connection timed out>; retrying in 4 second(s)...Download failed: Remote end closed connection without response; retrying in 8 second(s)...Traceback (most recent call last):
+  File "/usr/lib/python3.8/urllib/request.py", line 1354, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/usr/lib/python3.8/http/client.py", line 1418, in connect
+    super().connect()
+  File "/usr/lib/python3.8/http/client.py", line 922, in connect
+    self.sock = self._create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/p4a", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/entrypoints.py", line 18, in main
+    ToolchainCL()
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/toolchain.py", line 685, in __init__
+    getattr(self, command)(args)
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/toolchain.py", line 104, in wrapper_func
+    build_dist_from_args(ctx, dist, args)
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/toolchain.py", line 163, in build_dist_from_args
+    build_recipes(build_order, python_modules, ctx,
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/build.py", line 482, in build_recipes
+    recipe.download_if_necessary()
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/recipe.py", line 352, in download_if_necessary
+    self.download()
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/recipe.py", line 402, in download
+    self.download_file(self.versioned_url, filename)
+  File "/usr/local/lib/python3.8/dist-packages/pythonforandroid/recipe.py", line 206, in download_file
+    urlretrieve(url, target, report_hook)
+  File "/usr/lib/python3.8/urllib/request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.8/urllib/request.py", line 1397, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/lib/python3.8/urllib/request.py", line 1357, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 110] Connection timed out>

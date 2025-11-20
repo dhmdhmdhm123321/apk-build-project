@@ -1,0 +1,124 @@
+
+# 🔗 Xshell连接Ubuntu服务器指南
+
+## 📡 服务器信息
+- **主机**: 43.226.47.156
+- **端口**: 22
+- **用户名**: root
+- **密码**: DHMdhm99698
+
+## 🚀 连接步骤
+
+### 1. 打开Xshell
+2. 点击"新建"
+3. 填入连接信息：
+   - **名称**: Ubuntu服务器
+   - **协议**: SSH
+   - **主机**: 43.226.47.156
+   - **端口**: 22
+
+### 2. 设置认证
+4. 点击"用户身份验证"
+5. 选择"密码"
+6. 填入：
+   - **用户名**: root
+   - **密码**: DHMdhm99698
+
+### 3. 连接测试
+7. 点击"连接"
+8. 如果出现安全警告，选择"接受并保存"
+
+## 🎯 连接成功后的操作
+
+### 基本命令
+```bash
+# 查看系统信息
+uname -a
+lsb_release -a
+
+# 查看Python环境
+python3 --version
+which python3
+
+# 查看目录
+ls -la /root
+pwd
+
+# 查看进程
+ps aux | grep python
+```
+
+### 运行程序
+```bash
+# 直接运行Python程序
+python3 your_script.py
+
+# 在后台运行程序
+nohup python3 your_script.py &
+
+# 查看程序输出
+tail -f /path/to/logfile.log
+```
+
+### 文件操作
+```bash
+# 查看文件
+cat /root/your_file.txt
+
+# 编辑文件（使用nano）
+nano your_file.py
+
+# 复制文件（从本地到服务器）
+scp local_file.py root@43.226.47.156:/root/
+```
+
+## 🔧 Trae CN中的使用
+
+### 方法1: 在Trae CN终端中使用SSH
+```bash
+ssh root@43.226.47.156
+# 输入密码后即可操作
+```
+
+### 方法2: 远程执行命令
+```bash
+ssh root@43.226.47.156 "python3 --version"
+ssh root@43.226.47.156 "cd /root && ls -la"
+```
+
+### 方法3: 文件传输
+```bash
+# 上传文件到服务器
+scp local_file.py root@43.226.47.156:/root/
+
+# 从服务器下载文件
+scp root@43.226.47.156:/root/remote_file.py ./
+```
+
+## ⚡ 快速示例
+
+### 在服务器上运行Python程序
+```bash
+# 连接后执行
+python3 -c "print('Hello from Ubuntu Server!')"
+
+# 运行更复杂的程序
+python3 -c "
+import datetime, platform
+print('时间:', datetime.datetime.now())
+print('系统:', platform.system())
+print('用户:', 'root')
+"
+```
+
+### 服务器状态检查
+```bash
+# 系统状态
+uptime && free -h && df -h
+
+# 网络状态
+netstat -tulpn | grep :22
+
+# 最近登录
+last -5
+```
