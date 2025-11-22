@@ -46,8 +46,8 @@ jobs:
           python3-pip
     - name: Set up Java 11
       run: |
-        echo "JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> 
-        echo "PATH=/bin:" >> 
+        echo "JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> $GITHUB_ENV
+        echo "PATH=$PATH:/usr/lib/jvm/java-11-openjdk-amd64/bin" >> $GITHUB_ENV
     - name: Install Python dependencies
       run: |
         python3 -m pip install --upgrade pip
@@ -57,7 +57,7 @@ jobs:
         pip3 install python-for-android
     - name: Build APK
       run: |
-        p4a apk --private src/main.py --requirements python3,kivy --name "" --package com.example.app --version 1.0.0 --dist-dir ./output/
+        p4a apk --private . --requirements python3,kivy,pandas,matplotlib,openpyxl,reportlab,pyjnius,requests,ntplib --name "Salary Calculator" --package com.salary.calculator --version 1.0 --dist-dir ./output/ --android-api 31 --target-api 31 --orientation portrait --permission INTERNET
       env:
         ANDROID_HOME: /opt/android-sdk
         JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
