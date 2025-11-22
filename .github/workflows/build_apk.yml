@@ -1,4 +1,4 @@
-﻿name: Build APK
+name: Build APK
 on:
   push:
     branches: [ main, master ]
@@ -9,6 +9,11 @@ on:
   pull_request:
     branches: [ main, master ]
   workflow_dispatch:
+    inputs:
+      rebuild:
+        description: '强制重新构建APK'
+        required: true
+        default: 'true'
 jobs:
   build:
     runs-on: ubuntu-latest
