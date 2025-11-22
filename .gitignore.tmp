@@ -1,0 +1,66 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUILDOZER
+buildozer.spec
+# python-for-android (p4a) specific
+#python-for-android/dists/
+#python-for-android/builds/
+#python-for-android/recipes/
+
+# Misc
+.vscode/
+*.log
+.env
+__pycache__/
+*.pyc
+*.pyo
+
+# Large Android SDK/NDK files
+android-sdk/
+android-ndk/
+SDK目录准备完成/
+
+# Build artifacts
+output/
+bin/
+logs/
+
+# Docker related
+Dockerfile
