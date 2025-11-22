@@ -1,9 +1,12 @@
-﻿# APK Build Project
+# APK Build Project
+
+更新时间: 2024-07-23 重新构建
 这是使用 GitHub Actions 自动构建的 Android APK 项目。
 ## 项目结构
 - main.py - 主要Python应用程序
 - p4a_config.py - python-for-android配置文件
-- equirements.txt - Python依赖项
+- 
+equirements.txt - Python依赖项
 - .github/workflows/build_apk.yml - GitHub Actions构建配置
 ## 自动构建
 本项目配置了GitHub Actions自动构建：
