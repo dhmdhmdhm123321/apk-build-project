@@ -43,7 +43,17 @@ jobs:
           zlib1g-dev \
           libltdl-dev \
           libusb-1.0-0-dev \
-          python3-pip
+          python3-pip \
+          libgles2-mesa-dev \
+          libgl1-mesa-dev \
+          libharfbuzz-dev \
+          ffmpeg \
+          libavcodec-dev \
+          libavformat-dev \
+          libswscale-dev \
+          pkg-config
+        sudo apt-get clean
+        sudo rm -rf /var/lib/apt/lists/*
     - name: Set up Java 11
       run: |
         echo "JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> $GITHUB_ENV
@@ -57,10 +67,36 @@ jobs:
         pip3 install python-for-android
     - name: Build APK
       run: |
-        p4a apk --private . --requirements python3,kivy,pandas,matplotlib,openpyxl,reportlab,pyjnius,requests,ntplib --name "Salary Calculator" --package com.salary.calculator --version 1.0 --dist-dir ./output/ --android-api 31 --target-api 31 --orientation portrait --permission INTERNET
+        # 增加构建日志详细程度
+        export P4A_DEBUG=1
+        export P4A_VERBOSE=1
+        
+        # 清理之前的构建缓存
+        rm -rf .buildozer
+        mkdir -p .buildozer/cache
+        
+        # 使用更详细的构建命令，增加兼容性参数
+        p4a apk \
+          --private . \
+          --requirements python3,kivy,pandas,matplotlib,openpyxl,reportlab,pyjnius,requests,ntplib,numpy,pillow \
+          --name "Salary Calculator" \
+          --package com.salary.calculator \
+          --version 1.0 \
+          --dist-dir ./output/ \
+          --android-api 31 \
+          --target-api 31 \
+          --orientation portrait \
+          --permission INTERNET \
+          --permission READ_EXTERNAL_STORAGE \
+          --permission WRITE_EXTERNAL_STORAGE \
+          --arch armeabi-v7a \
+          --log-level debug \
+          --window --blacklist-requirements=tkinter \
+          --ndk-api 21
       env:
         ANDROID_HOME: /opt/android-sdk
         JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+        P4A_COLOR: '0'
     - name: Upload APK artifact
       uses: actions/upload-artifact@v3
       with:
